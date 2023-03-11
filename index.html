@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>NAEQ</title>
+<title>AQ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 </head>
@@ -9,7 +9,7 @@
 <div class="top" id="head">
 <form onsubmit="return false;"><input type="text" id="input" placeholder="Input Test Phrase" spellcheck="false" autofocus></form>
 <dl>
-<div><dt>NAEQ Sum</dt><dd id="result">0</dd></div>
+<div><dt>AQ Sum</dt><dd id="result">0</dd></div>
 <hr>
 <div><dt>Matches</dt><dd id="count">0</dd></div>
 <div class="out"><strong>Results</strong><div><ol id="match">N/A</ol></div></div>
@@ -108,7 +108,7 @@
 
 </style>
 
-<script src="data.js"></script>
+<script src="data-aq.js"></script>
 <script>
 input.oninput = function() {
 	a = 0;
@@ -124,11 +124,11 @@ input.oninput = function() {
 		a += ((input.value)).match(/\d+/g).map(Number).reduce(function(b, c) { return b + c; }, 0);
 	
 	result.innerHTML = a;
-		if (typeof naeq[a] !== 'undefined') {
-			count.innerHTML = naeq[a].length;
+		if (typeof aq[a] !== 'undefined') {
+			count.innerHTML = aq[a].length;
 			match.innerHTML = "";
-			Object.keys(naeq[a]).forEach(function(key) { 
-				match.innerHTML += "<li>" + naeq[a][key] + "</li>"; 
+			Object.keys(aq[a]).forEach(function(key) { 
+				match.innerHTML += "<li>" + aq[a][key] + "</li>"; 
 			})
 		}
 		else {
