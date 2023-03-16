@@ -1,5 +1,9 @@
-greetings, sourceror
+Based on @misterapol's "naeq" tool:<br>
+https://github.com/misterapol/naeq
 
-this tool was built quickly in a couple of days, please pardon the dust !
+Changes by @Alektryon, as of March 16, 2023:<br>
+— Changed the default cipher from NAEQ (New Aeon English Qaballa) to AQ (Alphanumeric Qabbala): a continuous, non-redundant, alphanumeric sequence from 0 to Z=35.<br>
+— Changed the database to my own, as I'm really not a fan of the database used (the same as in <a href="https://naeq.io/">NAEQ.io</a>), since most of its phrases don't seem to make sense.
 
-@offalynne
+"The wonders & magic of Alphanumeric Qabbala":<br>
+https://gematriaresearch.blogspot.com/2023/02/the-wonders-magic-of-alphanumeric.html
